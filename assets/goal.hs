@@ -12,7 +12,7 @@ import Data.Traversable (for)
 import System.Environment (getArgs)
 import System.IO (BufferMode(..), hSetBuffering, stdout)
 
-type Entry = (String, Int)
+type Entry = (String, Int) -- TODO: `data` に変えよう。
 
 main :: IO ()
 main = do
