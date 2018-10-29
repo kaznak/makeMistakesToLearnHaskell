@@ -84,4 +84,9 @@ showExercise e (n : _) = do
   d <- Exercise.loadDescriptionByName n
         >>= dieWhenNothing ("Exercise id " ++ n ++ " not found!")
   Exercise.saveLastShownName e n
-  Text.putStr d
+  showMarkdown d -- TODO: print markdown
+
+
+showMarkdown :: Text -> IO ()
+showMarkdown _ =
+  error "showMarkDown is not defined yet!"

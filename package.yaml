@@ -41,6 +41,7 @@ library:
   # TODO: Decide version
   - QuickCheck
   - bytestring
+  - cmark
   - directory
   - errors
   - filepath
@@ -48,9 +49,11 @@ library:
   - hint
   - insert-ordered-containers
   # - i18n Use in the future
+  - open-browser
   - QuickCheck
   - regex-applicative
   - safe
+  - temporary
   - text
   - transformers
   - typed-process

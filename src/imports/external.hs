@@ -49,11 +49,13 @@ import qualified System.Exit as Exit
 import           System.Exit (ExitCode(ExitSuccess, ExitFailure))
 import           System.FilePath ((</>))
 import qualified System.IO as IO
+import qualified System.IO.Temp as Temp
 import           System.Process.Typed (readProcess)
 import qualified System.Process.Typed as Process
 import qualified Test.QuickCheck as QuickCheck
 import           Test.QuickCheck (quickCheckWithResult)
 import qualified Text.Regex.Applicative as Regex
+import           Web.Browser (openBrowser)
 #ifdef mingw32_HOST_OS
 import qualified System.Win32.Console as Win32
 import GHC.IO.Encoding.CodePage (mkLocaleEncoding)
